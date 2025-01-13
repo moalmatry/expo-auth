@@ -16,7 +16,7 @@ const AppLayout = () => {
 
   console.log(authState?.authenticated);
 
-  if (!authState?.authenticated) return <Redirect href={"/sign-up"} />;
+  if (!authState?.authenticated) return <Redirect href={"/sign-in"} />;
 
   return <Slot />;
 };
